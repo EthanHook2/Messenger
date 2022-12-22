@@ -4,7 +4,7 @@ import LogoutButton from './LogoutButton';
 import { unstable_getServerSession } from "next-auth/next"
 
 
-export default async function Header() {
+export default async function Header () {
     const session = await unstable_getServerSession();
 
     if (session) 
